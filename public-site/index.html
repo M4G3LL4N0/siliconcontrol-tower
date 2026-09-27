@@ -11,25 +11,30 @@
 html,body{max-width:100%;overflow-x:hidden}
 h1,h2,p,li,a{overflow-wrap:anywhere}
 
-body { margin:0; background:#0e1116; color:#e7eef8; font:18px/1.35 "Trebuchet MS", sans-serif; }
-header { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; padding:18px 22px; background:#e7eef8; color:#0e1116; }
-.ch { display:grid; grid-template-columns:72px minmax(0,1fr); gap:12px; padding:28px 22px; border-bottom:1px solid #e7eef8; }
-b { color:#93c5fd; font-size:22px; }
-h1 { margin:0; font-size:clamp(32px, 4vw, 52px); line-height:1; }
-.cta { color:#0e1116; background:#93c5fd; text-decoration:none; padding:12px 14px; display:inline-block; }
-#scope { padding:22px; }
-@media (max-width:600px) { .ch { grid-template-columns:1fr; } }
+body { margin:0; background:#07080a; color:#d6ffe4; font:16px/1.5 ui-monospace, monospace; }
+.term { max-width:920px; margin:32px auto; background:#0d1210; border:1px solid #234; border-radius:12px; overflow:hidden; }
+header { display:flex; gap:8px; align-items:center; padding:12px 14px; background:#101816; }
+header i { width:10px; height:10px; border-radius:50%; background:#e7b008; display:block; }
+header span { margin-left:8px; color:#9aa; }
+pre { white-space:pre-wrap; padding:8px 18px 18px; margin:0; }
+.cta { display:inline-block; margin:0 18px 18px; color:#04140c; background:#e7b008; text-decoration:none; padding:8px 12px; }
+#scope { max-width:920px; margin:0 auto 40px; padding:0 8px; }
 
 </style>
 </head>
 <body>
 
-<main class="chapters">
-  <header><span>SiliconControl Tower</span><span>Lab</span></header>
-  <section class="ch"><b>01</b><h1>Track shortages, geopolitics, and demand shocks from one control tower.</h1></section>
-  <section class="ch"><b>02</b><p>SiliconControl Tower organizes semiconductor risk by region, chip class, supplier posture, and exposure so operators can brief leadership from a single surface.</p></section>
-  <section class="ch"><b>03</b><a class="cta" href="#scope">Read what is withheld</a></section>
+<main class="term">
+  <header><i></i><i></i><i></i><span>SiliconControl Tower</span></header>
+  <pre>
+$ status
+maturity  Lab
+claim     Track shortages, geopolitics, and demand shocks from one control tower.
+
+SiliconControl Tower organizes semiconductor risk by region, chip class, supplier posture, and exposure so operators can brief leadership from a single surface.
+  </pre>
+  <a class="cta" href="#scope">$ read scope</a>
 </main>
-<section id="scope"><ul><li>The page describes the current work. It does not invent customers.</li><li>A live signup, price, or metric appears here only when the product has one.</li><li>Maturity on this page is a label, not a launch claim.</li></ul></section>
+<section id="scope"><h2>scope</h2><ul><li>The page describes the current work. It does not invent customers.</li><li>A live signup, price, or metric appears here only when the product has one.</li><li>Maturity on this page is a label, not a launch claim.</li></ul></section>
 </body>
 </html>
